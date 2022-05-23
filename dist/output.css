@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.Poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.gras {
+  font-weight: bold;
+  font-size: large;
+}
+
+.green {
+  font-style: normal;
+  color: #03c04a;
+}
+
+.deco {
+  text-decoration: none;
+}

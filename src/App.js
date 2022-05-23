@@ -1,23 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './Components/Nav';
+import Contenu from './Components/Contenu';
+import Annonce from './Components/Annonce';
+import LogIn from './Components/LogIn';
+import Property from './Components/Property';
+import SignIn from './Components/SignIn';
+import Declare from './Components/Declare';
+import Avis from './Components/Avis';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Router>
+     <Nav />  
+     <Routes>
+
+     <Route path="/Contenu" exact element={<Contenu/>} />
+     <Route path="/Annonce" exact element={<Annonce/>} />
+     <Route path="/Property" exact element={<Property/>} />
+     <Route path="/LogIn" exact element={<LogIn/>} />
+     <Route path="/SignIn" exact element={<SignIn/>} />
+
+     </Routes>
+
+      
+    </Router>
+
     </div>
   );
 }
